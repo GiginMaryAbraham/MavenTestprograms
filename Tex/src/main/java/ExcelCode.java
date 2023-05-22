@@ -19,7 +19,7 @@ public class ExcelCode {
 	public static String getStringData(int a, int b) throws IOException {
 
 		f = new FileInputStream("\\D:\\testexcel.xlsx");//excel file path
-		w = new XSSFWorkbook(f);
+		w = new XSSFWorkbook(f);//file
 		s = w.getSheet("Sheet1");
 		Row r = s.getRow(a);
 		Cell c = r.getCell(b);
